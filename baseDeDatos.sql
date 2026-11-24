@@ -95,3 +95,9 @@ r.fecha_registro, r.estado, u.nombre_lugar AS ubicacion
 FROM registro_objeto r
 JOIN ubicacion u ON r.id_ubicacion = u.id_ubicacion
 Where r.fecha_registro = '2026-11-18';
+
+SELECT r.id_objeto, r.descripcion, r.categoria, r.tipo_reporte,
+r.fecha_registro, r.estado, u.nombre_lugar AS ubicacion
+FROM registro_objeto r
+JOIN ubicacion u ON r.id_ubicacion = u.id_ubicacion
+WHERE u.nombre_lugar = 'Biblioteca Central';
