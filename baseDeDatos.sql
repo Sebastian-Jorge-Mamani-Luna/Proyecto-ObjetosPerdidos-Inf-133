@@ -67,3 +67,19 @@ INSERT INTO registro_objeto (
 ('Calculadora cientifica gris', 'Dispositivos electronicos', 'extraviado', '2026-11-19', 'reclamado', 'Solicito devolucion con carnet', '2026-11-20', 8, 8),
 ('Folder con apuntes de calculo', 'Documentos', 'encontrado', '2026-11-20', 'entregado', 'Entregado a su duena', '2026-11-21', 9, 1),
 ('Chaqueta deportiva azul marino', 'Ropa', 'encontrado', '2026-11-21', 'reportado', NULL, NULL, 10, 10);
+
+/*consultas*/
+
+INSERT INTO registro_objeto (
+    descripcion, categoria, tipo_reporte,fecha_registro, estado, solicitud_recuperacion,fecha_solicitud, id_propietario, id_ubicacion
+) VALUES (
+    'Paraguas negro pegable',
+    'Accesorios',
+    'encontrado',
+    '2026-11-22',
+    'encontrado',
+    NULL.
+    null,
+    1,
+    9
+);
