@@ -71,22 +71,23 @@ INSERT INTO registro_objeto (
 /*consultas*/
 
 INSERT INTO registro_objeto (
-    descripcion, categoria, tipo_reporte,fecha_registro, estado, solicitud_recuperacion,fecha_solicitud, id_propietario, id_ubicacion
+    descripcion, categoria, tipo_reporte, fecha_registro,
+    estado, solicitud_recuperacion, fecha_solicitud, id_propietario, id_ubicacion
 ) VALUES (
     'Paraguas negro pegable',
     'Accesorios',
     'encontrado',
     '2026-11-22',
     'encontrado',
-    NULL.
-    null,
+    NULL,
+    NULL,
     1,
     9
 );
 
 SELECT r.id_objeto, r.descripcion, r.categoria, r.tipo_reporte,
        r.fecha_registro, r.estado, u.nombre_lugar AS ubicacion
-FROM registro_objeto
+FROM registro_objeto r
 JOIN ubicacion u ON r.id_ubicacion = u.id_ubicacion
 WHERE r.categoria = 'Documentos';
 
