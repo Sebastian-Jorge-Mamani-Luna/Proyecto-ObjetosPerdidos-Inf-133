@@ -107,3 +107,10 @@ SET solicitud_recuperacion = 'Presento documento de identidad para reclamo',
     fecha_solicitud = '2026-11-23',
     estado = 'reclamado'
 WHERE id_objeto = 2;
+
+SELECT r.id_objeto, r.descripcion, r.estado,
+       r.solicitud_recuperacion, r.fecha_solicitud,
+       p.nombre, p.apellido, p.telefono
+FROM registro_objeto r
+JOIN propietario p ON r.id_propietario = p.id_propietario
+WHERE  r.solicitud_recuperacion IS NOT NULL;
