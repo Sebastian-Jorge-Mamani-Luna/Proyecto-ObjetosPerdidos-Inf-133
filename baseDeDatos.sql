@@ -28,3 +28,15 @@ CREATE TABLE registro_objeto (
     FOREIGN KEY (id_propietario) REFERENCES propietario(id_propietario),
     FOREIGN KEY (id_ubicacion) REFERENCES ubicacion(id_ubicacion)
 );
+
+INSERT INTO propietario (nombre, apellido, correo, telefono) VALUES
+('Ana', 'Mamani', 'ana.mamani@umsa.bo', '71234501'),
+('Carlos', 'Quispe', 'carlos.quispe@umsa.bo', '71234502'),
+('Maria', 'Flores', 'maria.flores@umsa.bo', '71234503'),
+('Jorge', 'Condori', 'jorge.condori@umsa.bo', '71234504'),
+('Lucia', 'Choque', 'lucia.choque@umsa.bo', '71234505'),
+('Diego', 'Rojas', 'diego.rojas@umsa.bo', '71234506'),
+('Sofia', 'Apaza', 'sofia.apaza@umsa.bo', '71234507'),
+('Miguel', 'Vargas', 'miguel.vargas@umsa.bo', '71234508'),
+('Valeria', 'Ticona', 'valeria.ticona@umsa.bo', '71234509'),
+('Luis', 'Paredes', 'luis.paredes@umsa.bo', '71234510');
