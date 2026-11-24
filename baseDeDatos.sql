@@ -83,3 +83,9 @@ INSERT INTO registro_objeto (
     1,
     9
 );
+
+SELECT r.id_objeto, r.descripcion, r.categoria, r.tipo_reporte,
+r.fecha_registro, r.estado, u.nombre_lugar AS ubicacion
+FROM registro_objeto
+JOIN ubicacion u ON r.id_ubicacion = u.id_ubicacion
+WHERE r.categoria = 'Documentos';
