@@ -85,19 +85,25 @@ INSERT INTO registro_objeto (
 );
 
 SELECT r.id_objeto, r.descripcion, r.categoria, r.tipo_reporte,
-r.fecha_registro, r.estado, u.nombre_lugar AS ubicacion
+       r.fecha_registro, r.estado, u.nombre_lugar AS ubicacion
 FROM registro_objeto
 JOIN ubicacion u ON r.id_ubicacion = u.id_ubicacion
 WHERE r.categoria = 'Documentos';
 
 SELECT r.id_objeto, r.descripcion, r.categoria, r.tipo_reporte,
-r.fecha_registro, r.estado, u.nombre_lugar AS ubicacion
+       r.fecha_registro, r.estado, u.nombre_lugar AS ubicacion
 FROM registro_objeto r
 JOIN ubicacion u ON r.id_ubicacion = u.id_ubicacion
 Where r.fecha_registro = '2026-11-18';
 
 SELECT r.id_objeto, r.descripcion, r.categoria, r.tipo_reporte,
-r.fecha_registro, r.estado, u.nombre_lugar AS ubicacion
+       r.fecha_registro, r.estado, u.nombre_lugar AS ubicacion
 FROM registro_objeto r
 JOIN ubicacion u ON r.id_ubicacion = u.id_ubicacion
 WHERE u.nombre_lugar = 'Biblioteca Central';
+
+UPDATE registro_objeto 
+SET solicitud_recuperacion = 'Presento documento de identidad para reclamo',
+    fecha_solicitud = '2026-11-23',
+    estado = 'reclamado'
+WHERE id_objeto = 2;
