@@ -40,3 +40,15 @@ INSERT INTO propietario (nombre, apellido, correo, telefono) VALUES
 ('Miguel', 'Vargas', 'miguel.vargas@umsa.bo', '71234508'),
 ('Valeria', 'Ticona', 'valeria.ticona@umsa.bo', '71234509'),
 ('Luis', 'Paredes', 'luis.paredes@umsa.bo', '71234510');
+
+INSERT INTO ubicacion (nombre_lugar, referencia) VALUES
+('Biblioteca Central', 'Planta baja - sala de lectura'),
+('Edificio de Laboratorios', 'Piso 2 - laboratorio de computacion'),
+('Monoblock Central', 'Patio principal'),
+('Coliseo Universitario', 'Ingreso lateral derecho'),
+('Cafeteria Central', 'Mesas del sector norte'),
+('Auditorio Principal', 'Fila central'),
+('Bloque de Aulas A', 'Piso 1 - aula A102'),
+('Bloque de Aulas B', 'Piso 3 - aula B305'),
+('Porteria Principal', 'Caseta de control'),
+('Canchas Deportivas', 'Graderias este');
