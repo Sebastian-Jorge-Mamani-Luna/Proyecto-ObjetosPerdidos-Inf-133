@@ -52,3 +52,18 @@ INSERT INTO ubicacion (nombre_lugar, referencia) VALUES
 ('Bloque de Aulas B', 'Piso 3 - aula B305'),
 ('Porteria Principal', 'Caseta de control'),
 ('Canchas Deportivas', 'Graderias este');
+
+INSERT INTO registro_objeto (
+    descripcion, categoria, tipo_reporte, fecha_registro,
+    estado, solicitud_recuperacion, fecha_solicitud, id_propietario, id_ubicacion
+) VALUES
+('Carnet universitario y cedula', 'Documentos', 'encontrado', '2026-11-10', 'entregado', 'Verificado con matricula', '2026-11-11', 1, 1),
+('Mochila negra con cuadernos', 'Mochilas', 'extraviado', '2026-11-12', 'reportado', NULL, NULL, 2, 3),
+('Cargador de laptop negro', 'Dispositivos electronicos', 'encontrado', '2026-11-13', 'reclamado', 'Tiene etiqueta con iniciales D.R.', '2026-11-14', 3, 2),
+('Llavero con tres llaves y cinta', 'Llaves y accesorios', 'encontrado', '2026-11-15', 'encontrado', NULL, NULL, 4, 1),
+('Agenda estudiantil azul', 'Documentos', 'extraviado', '2026-11-16', 'reportado', NULL, NULL, 5, 7),
+('Audifonos inalambricos blancos', 'Dispositivos electronicos', 'encontrado', '2026-11-17', 'entregado', 'Coincide serie y funda', '2026-11-18', 6, 5),
+('Botella termica metalica verde', 'Accesorios', 'encontrado', '2026-11-18', 'encontrado', NULL, NULL, 7, 4),
+('Calculadora cientifica gris', 'Dispositivos electronicos', 'extraviado', '2026-11-19', 'reclamado', 'Solicito devolucion con carnet', '2026-11-20', 8, 8),
+('Folder con apuntes de calculo', 'Documentos', 'encontrado', '2026-11-20', 'entregado', 'Entregado a su duena', '2026-11-21', 9, 1),
+('Chaqueta deportiva azul marino', 'Ropa', 'encontrado', '2026-11-21', 'reportado', NULL, NULL, 10, 10);
